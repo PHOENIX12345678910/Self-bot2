@@ -121,8 +121,8 @@ class SELFBOT():
     __version__ = "1.0.0"
 
 #Recovery of the configuration put in the config.json file
-with open('config.json') as f:
-    config = json.load(f)
+configenv = os.environ.get("CONFIG")
+config = json.load(configenv)
 
 token = config.get('token')
 password = config.get('password')
