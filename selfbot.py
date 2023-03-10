@@ -122,7 +122,7 @@ class SELFBOT():
 
 #Recovery of the configuration put in the config.json file
 configenv = os.environ.get("CONFIG")
-config = json.load(configenv)
+config = json.loads(configenv)
 
 token = config.get('token')
 password = config.get('password')
