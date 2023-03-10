@@ -1,12 +1,6 @@
 # railway.toml
+[build]
+builder = "nixpacks"
 
-
-name = "my-selfbot"
-language = "python"
-# Define your project's build command
-build = "python -m pip install -r requirements.txt"
-# Define your project's start command
-start = "python selfbot.py"
-# Define a setup command that runs the "setup.bat" file
-[commands.setup]
-command = "cmd /C setup.bat"
+[deploy]
+startCommand = "python selfbot.py"
