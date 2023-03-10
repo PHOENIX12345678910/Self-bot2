@@ -1,6 +1,6 @@
 requests
 colorama
-discord.py
+discord.py==1.7.3
 selenium
 bs4
 Pillow
